@@ -67,7 +67,7 @@ public class numbergame {
                         if(d>0 && d<=5){
                             System.out.println("\nYou are Close but just a Little low from the Generated Number\n");
                         }
-                        else if(d>6 && d<=25){
+                        else if(d>=6 && d<=25){
                             System.out.println("\nYou are Closer but Lower from the Generated Number\n");
                         }
                         else{
@@ -79,7 +79,7 @@ public class numbergame {
                         if(d>0 && d<=5){
                             System.out.println("\nYou are too Close but Little High from the Generated Number\n");
                         }
-                        else if(d>6 && d<=25){
+                        else if(d>=6 && d<=25){
                             System.out.println("\nYou are Closer but Higher from the Generated Number\n");
                         }
                         else{
