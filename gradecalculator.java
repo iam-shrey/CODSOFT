@@ -14,19 +14,22 @@ public class gradecalculator {
         System.out.println("Total Marks Obtained = "+marks+"/"+n*100);
         System.out.printf("Average Percentage = %.2f",avg);System.out.println(" %");
         if(avg>=90)
-            System.out.println("Grade Obtained = A+");
+            System.out.println("Grade Obtained = A+"+"\nRemark: Pass");
         else if(avg>=80 && avg<90)
-            System.out.println("Grade Obtained = A");
+            System.out.println("Grade Obtained = A"+"\nRemark: Pass");
         else if(avg>=70 && avg<80)
-            System.out.println("Grade Obtained = B+");
+            System.out.println("Grade Obtained = B+"+"\nRemark: Pass");
         else if(avg>=60 && avg<70)
-            System.out.println("Grade Obtained = B");
+            System.out.println("Grade Obtained = B"+"\nRemark: Pass");
         else if(avg>=50 && avg<60)
-            System.out.println("Grade Obtained = C+");
+            System.out.println("Grade Obtained = C+"+"\nRemark: Pass");
         else if(avg>=40 && avg<50)
-            System.out.println("Grade Obtained = C");
+            System.out.println("Grade Obtained = C"+"\nRemark: Pass");
         else if(avg>=33 && avg<40)
-            System.out.println("Grade Obtained = D");
+            System.out.println("Grade Obtained = D"+"\nRemark: Pass");
+        else{
+            System.out.println("Grade Obtained = E"+"\nRemark: Fail");
+        }
         sc.close();
     }
 }
