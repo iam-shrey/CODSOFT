@@ -15,9 +15,10 @@ public class numbergame {
         System.out.println("6. Your Number of Chances will be According to your Choice of Level.");
         System.out.println("7. You can Choose between Easy,Medium and Hard levels.");
         System.out.println("8. Easy: 15 Chances, Medium: 10 Chance, Hard: 5 Chances.\n");
-        int opt,n=0,score=0;
+        int opt,n=0,score=0,roundswon=0,roundsplayed=0;
         boolean validchoice,again;
         do{
+            roundsplayed++;
             again=false;
             do{
                 validchoice=false;
@@ -58,6 +59,7 @@ public class numbergame {
                 user = sc.nextInt();
                 if(user==comp){
                     System.out.println("\nCongratulations! You Have Won the Game.\n");
+                    roundswon++;
                     break;
                 }
                 else{
@@ -100,6 +102,7 @@ public class numbergame {
             score+=currentscore;
             System.out.println("Current Score = "+currentscore);
             System.out.println("Total Score = "+score+"\n");
+            System.out.println("Total Rounds Played = "+roundsplayed+"\nTotal Rounds Won = "+roundswon+"\n");
             System.out.println("Press 1 to Play Again.");
             System.out.println("Press 2 to Quit the Game.\n");
             opt=sc.nextInt();
