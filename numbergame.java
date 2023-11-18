@@ -1,3 +1,5 @@
+package projects;
+
 import java.util.*;
 
 public class numbergame {
@@ -95,7 +97,7 @@ public class numbergame {
             }while(i<=n);
             if(i>n){
                 currentscore=0;
-                System.out.println("\nYou Have Lost the game!\n");
+                System.out.println("\nYou Have Lost the game!\n\nThe Correct Number was: "+comp);
             }
             score+=currentscore;
             System.out.println("Current Score = "+currentscore);
