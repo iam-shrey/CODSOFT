@@ -1,5 +1,3 @@
-package projects;
-
 import java.util.*;
 
 public class ATM {
